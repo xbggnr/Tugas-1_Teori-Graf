@@ -12,7 +12,7 @@ struct graph{
         edgeCount++;
     }
 
-    void FlowdWarshal(string awal, string akhir){
+    void FloydWarshal(string awal, string akhir){
         unordered_map<string, unordered_map<string, long long>> jarak;
         unordered_map<string, unordered_map<string, string>> nextNode;
         vector<string> nodes;
@@ -100,5 +100,5 @@ int main(void){
     g.add_edge("v9", "v11", 2);
     g.add_edge("v10", "v11", 4);
 
-    g.FlowdWarshal("v1", "v11");
+    g.FloydWarshal("v1", "v11");
 }
